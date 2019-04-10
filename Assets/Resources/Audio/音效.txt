@@ -1,0 +1,42 @@
+正常发射声音      fashe.org   (ok)
+
+发射后珠子出现在位置上声音（位置上先前没有珠子）     tihuan01.org   (ok)            
+发射后珠子出现在位置上声音（位置上先前有珠子，替换成功）  tihuan02.org  (ok)
+
+替换不成功（先前位置上有黑色或者灰色珠子）                tihuan03.org   (ok)
+         
+替换破碎（先前位置上是障碍物）                            tihuan04.org (ok)
+
+普通消除                                                   combo0.org  (ok)
+
+连续消除1                                                  combo1.org (ok)
+
+连续消除2                                                  combo2.org (ok)
+
+连续消除3                                                  combo3.org  (ok)
+
+连续消除4                                                 combo4.org  (ok)
+
+
+使用道具刷新音效                                           shuaxin.org   (ok)     
+
+使用道具摧毁                                                 cuihui.org  (ok)                                                   
+黑色变灰色                                                    break.org   (ok) 
+
+金币消除                                                  coin.org   (ok)  
+
+炸弹                                                      bomb.org    (ok)   
+   
+梦幻时间（进入梦幻时间提示音）                            menghuan.org  （暂时缺失）              
+宝藏时间（进入梦幻时间提示音）                            baozang.org  （暂时缺失）
+
+获得星星                                                      getstar.org  (ok)
+
+失败                                                         fail.org    (ok)
+
+游戏主界面/关卡选择背景音乐                                   gameBG.mp3   (ok)
+
+关卡中界面                                                     fightBG.mp3   (ok)
+
+
+10s倒计时                                                     daojishi.org   (ok)

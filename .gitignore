@@ -1,0 +1,10 @@
+.vs
+Export
+Export
+Library
+Temp
+UnityPackageManager
+DragonBall.csproj
+DragonBall.Editor.csproj
+DragonBall.sln
+*.meta
