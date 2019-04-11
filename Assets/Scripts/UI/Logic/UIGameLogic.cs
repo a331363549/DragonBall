@@ -51,7 +51,7 @@ public class UIGameLogic : UILogic
     /// 消除字典
     /// </summary>
     List<List<BallBase>> clear_list = new List<List<BallBase>>();
-
+    UIGameUILogic m_uiLogic;
     // Use this for initialization
     void Start () {
         InitGameMap();
@@ -73,7 +73,10 @@ public class UIGameLogic : UILogic
         speed = cfg.speed;
 
         Create_InitBall();
+        UIGameUISlide.Open();
+        m_uiLogic = FindObjectOfType<UIGameUILogic>();
         CheckClear();
+        m_uiLogic.Init(MainLogic.Instance.m_CurMission.ToString());
         Create_NewBall(list_shootRate, shoot_trans, Vector3.zero);
         Create_NewBall(list_shootRate, next_trans, Vector3.zero);
     }
@@ -238,9 +241,10 @@ public class UIGameLogic : UILogic
             current_score += getAddScore(clear_list[i].Count);
             Dictionary<BallColor, int> dic_mm = new Dictionary<BallColor, int>();
             dic_mm.Add(color, clear_list[i].Count);
+            m_uiLogic.UpdateTargets(dic_mm, current_score.ToString());
             //SendMessage("MainUIForm", "UpdateTargets", dic_mm);
             //SendMessage("MainUIForm", "UpdateScore", current_score);
-            //Debug.Log("ball_color = " + color + " score = " + current_score + "count = " + clear_list[i].Count + "length = " + clear_list.Count);
+            Debug.Log("ball_color = " + color + " score = " + current_score + "count = " + clear_list[i].Count + "length = " + clear_list.Count);
         }
         current_combo += clear_list.Count;
         //SendMessage("AudioManager", "Combo", "combo" + current_combo);
